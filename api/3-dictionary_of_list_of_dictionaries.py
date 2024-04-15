@@ -2,10 +2,10 @@
 """Script to get and export todo list in JSON of an employee with REST API"""
 import json
 import requests
-from sys import argv
 
 
 def export_all_JSON():
+    """export all data to JSON"""
     url = "https://jsonplaceholder.typicode.com"
     req = requests.get("{}/users".format(url))
     data = req.json()
