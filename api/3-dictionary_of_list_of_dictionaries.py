@@ -22,7 +22,7 @@ def export_all_JSON():
                 "completed": task["completed"]
             }
             user_task[user["id"]].append(task_dictionnary)
-    with open("todo_all_employee.json", "w") as file:
+    with open("todo_all_employees.json", "w") as file:
         json.dump(user_task, file)
 
 
